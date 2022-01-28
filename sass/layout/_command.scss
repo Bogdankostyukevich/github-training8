@@ -1,0 +1,74 @@
+.command {
+    background-color: var(--section-command-bc);
+    padding-bottom: 94px;
+
+    &-title {
+        color: var(--primery-text-color);
+    
+        margin: 0;
+        padding: 0;
+        padding-top: 94px;
+    
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.166;
+        text-align: center;
+    }
+
+    & .work {
+        padding-top: 94px;
+        margin-bottom: 50px;
+    }
+}
+
+.employees-list {
+    display: flex;
+
+    &__title + &__title {
+        margin-left: 30px;
+    }
+
+    &__title {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+         0px 1px 1px rgba(0, 0, 0, 0.14),
+          0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__title {
+        background-color: var(--primery-white-color);
+    }
+}
+
+.photo {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.name {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.name {
+    color: var(--primery-text-color);
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+}
+
+.profession {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+
+    color: var(--title-text-color);
+
+    font-size: 16px;
+    line-height: 1.187;
+    text-align: center;
+}

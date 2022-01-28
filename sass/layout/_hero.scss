@@ -1,0 +1,59 @@
+.hero {
+    margin: 0;
+    padding: 0;
+}
+
+.background-hero {
+     font-weight: 900;
+     font-size: 44px;
+     line-height: 1.363;
+     text-align: center;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
+
+     padding-top: 200px;
+     padding-bottom: 200px;
+
+     max-width: 1600px;
+     height: 600px;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: var(--background);
+     background-image: linear-gradient(
+     rgba(0,0,0,0.4), 
+     rgba(47,48,58,0.4)), 
+     url("../images/icon/fon.jpg");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+
+     &__title {
+        color: var(--primery-white-color);
+        font-size: 44px;
+    
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        color: var(--primery-white-color);
+        background-color: var(--accent-color);
+        cursor: pointer;
+    
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.06em;
+    
+        display: inline-block;
+        padding: 10px 32px;
+        min-width: 200px;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border: 0 solid transparent;
+    }
+ }
+
+
+
