@@ -19,13 +19,42 @@
      margin-left: auto;
      margin-right: auto;
      background-color: var(--background);
-     background-image: linear-gradient(
-     rgba(0,0,0,0.4), 
-     rgba(47,48,58,0.4)), 
-     url("../images/icon/fon.jpg");
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
+
+     @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .box {
+            background-image: linear-gradient(
+            rgba(0,0,0,0.4), 
+            rgba(47,48,58,0.4)), 
+            url("../images/fon.jpg");
+        }
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .box {
+            background-image: linear-gradient(
+            rgba(0,0,0,0.4), 
+            rgba(47,48,58,0.4)), 
+            url("../images/fon.jpg");
+        }
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .box {
+            background-image: linear-gradient(
+            rgba(0,0,0,0.4), 
+            rgba(47,48,58,0.4)), 
+            url("../images/fon.jpg");
+        }
+    }
 
      &__title {
         color: var(--primery-white-color);

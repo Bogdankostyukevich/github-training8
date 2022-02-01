@@ -488,6 +488,10 @@ body {
   border-bottom: 1px solid #ECECEC;
 }
 
+.page-header__nav {
+  display: none;
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,6 +499,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .site-nav {
@@ -567,6 +573,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-left: auto;
+  display: none;
 }
 
 .auth-nav__item {
@@ -616,11 +623,30 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--background);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/icon/fon.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(47, 48, 58, 0.4)), url("../images/icon/fon.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .background-hero .box {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/fon.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .background-hero .box {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/fon.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon.jpg");
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .background-hero .box {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/fon.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon.jpg");
+  }
 }
 
 .background-hero__title {
@@ -711,12 +737,12 @@ body {
   margin: 0;
   padding: 0;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.166;
 }
 
 .ability .ability-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .list-icon {
@@ -838,30 +864,59 @@ body {
   padding: 0;
   padding-top: 94px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.166;
   text-align: center;
 }
 
 .command .work {
   padding-top: 94px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .command .work {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .employees-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-bottom: -30px;
 }
 
-.employees-list__title + .employees-list__title {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .employees-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .employees-list__title {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .employees-list__title {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .employees-list__title {
+    -ms-flex-preferred-size: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 .employees-list__title {

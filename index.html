@@ -16,7 +16,7 @@
 
    <!--шапка сайта-->
 
-    <!-- <header class="page-header">
+    <header class="page-header">
         <div class="main-nav container">
            <a href="./index.html" class="logo page-header__logo">Web<span class="logo__color__dark">Studio</span></a>
             <nav class="page-header__nav">
@@ -37,9 +37,10 @@
                         <use href="./images/symbol-defs1.svg#icon-smartphone1"></use>
                     </svg>+38 096 111 11 11</a>
                 </li>
-            </ul>  
-        </div>       
-    </header> -->
+            </ul>
+            <button type="button"></button>  
+        </div>   
+    </header>
 
     <!--контент main-->
 
@@ -173,12 +174,18 @@
 
         <!--наша команда-->
 
-        <!-- <section class="command">
+        <section class="command">
             <div class="container">
                 <h2 class="command-title work">Наша команда</h2>
                 <ul class="employees-list">
                     <li class="employees-list__title">
-                        <img class="photo" src="./images/employer1.jpg" alt="employee1" width="270">
+                        <picture>
+                            <source srcset="./images/mtd/employer1-desc.jpg 1x, ./images/mtd/employer1-desc2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/mtd/employer1-tab.jpg 1x, ./images/mtd/employer1-tab2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mtd/employer1.jpg 1x, ./images/mtd/employer1-2x.jpg 2x" media="(min-width: 480px)">
+
+                            <img class="photo" src="./images/employer1.jpg" alt="парень с бородой в очках" width="270">
+                        </picture>
                         <div class="container-our-team">
                             <h3 class="name">Игорь Демьяненко</h3>
                             <p class="profession">Product Designer</p>
@@ -201,7 +208,7 @@
                         </div>
                     </li>
                     <li class="employees-list__title">
-                        <img class="photo" src="./images/employer2.jpg" alt="employee2" width="270">
+                        <img class="photo" src="./images/employer2.jpg" alt="employer2" width="270">
                         <div class="container-our-team">
                             <h3 class="name">Ольга Репина</h3>
                             <p class="profession">Frontend Developer</p>
@@ -224,7 +231,7 @@
                         </div>
                     </li>
                     <li class="employees-list__title">
-                        <img class="photo" src="./images/employer3.jpg" alt="employee3" width="270">
+                        <img class="photo" src="./images/employer3.jpg" alt="employer3" width="270">
                         <div class="container-our-team">
                             <h3 class="name">Николай Тарасов</h3>
                             <p class="profession">Marketing</p>
@@ -247,7 +254,7 @@
                         </div>
                     </li>
                     <li class="employees-list__title">
-                        <img class="photo" src="./images/employer4.jpg" alt="employee4" width="270">
+                        <img class="photo" src="./images/employer4.jpg" alt="employer4" width="270">
                         <div class="container-our-team">
                             <h3 class="name">Михаил Ермаков</h3>
                             <p class="profession">UI Designer</p>
@@ -272,7 +279,7 @@
                 </ul>
             </div>
         </section>
- -->
+
         <!-- Постоянные клиенты -->
 
         <!-- <section class="customers">
