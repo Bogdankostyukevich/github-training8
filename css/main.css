@@ -1345,11 +1345,13 @@ img {
 }
 
 .mobile-social__list {
+  position: relative;
   margin-left: 20px;
   margin-bottom: 48px;
 }
 
 .mobile-social__list .pseudo::after {
+  position: absolute;
   content: "";
   background-image: url("../images/line.svg");
   width: 22px;
@@ -1368,7 +1370,7 @@ img {
 
 .menu-container {
   position: relative;
-  background-color: #fff;
+  background-color: var(--primery-white-color);
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -1380,6 +1382,12 @@ img {
   top: 15px;
   border: none;
   background-color: var(--primery-white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container .menu-close {
+    display: none;
+  }
 }
 
 .menu-container .menu-close .menu-button__color:hover,
@@ -1460,5 +1468,11 @@ img {
 
 .menu-container.is-hidden {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container.is-hidden {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */

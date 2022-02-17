@@ -45,10 +45,12 @@
 }
 
 .mobile-social__list {
+    position: relative;
     margin-left: 20px;
     margin-bottom: 48px;
 
     .pseudo::after {
+        position: absolute;
         content: "";
         background-image: url("../images/line.svg");
         width: 22px;
@@ -69,10 +71,14 @@
 
 .menu-container {
     position: relative;
-    background-color: #fff;
+    background-color: var(--primery-white-color);
     top: 0;
     width: 100vw;
     height: 100vh;
+
+    @media screen and (min-width: 768px) {
+        
+    }
 
     .menu-close {
         position: absolute;
@@ -81,6 +87,10 @@
 
         border: none;
         background-color: var(--primery-white-color);
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
 
         .menu-button__color:hover,
         .menu-button__color:focus {
@@ -155,4 +165,8 @@
 
 .menu-container.is-hidden {
     display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
 }
