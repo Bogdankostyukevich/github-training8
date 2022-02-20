@@ -6,10 +6,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
 
-    @media screen and (min-width: 768px) {
-          display: none;
-    }
+.menu-tablet {
+
 }
 
 .mobile-menu {
@@ -19,28 +19,41 @@
         margin-left: 20px;
     }
     .mobile-menu__link {
+    
         margin-bottom: 36px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        text-align: center;
+        letter-spacing: 0.02em;
+    
+        color: var(--primery-text-color);
+    
+        &:hover {
+            color: var(--accent-color);
+        }
     }
 }
 
 .mobile-contacts__list {
     margin-left: 20px;
-    margin-bottom: 64px
+    margin-bottom: 64px;
 }
 
-.mobile-contacts__item.tel {
-    margin-bottom: 36px;
+.mobile-contacts__item {
 
     .mobile-contacts__link {
-        
-        font-style: normal;
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 1.176;
+        font-size: 24px;
+        line-height: 28px;
         letter-spacing: 0.02em;
-    
-        color: var(--accent-color);
-        
+
+        @media screen and (min-width: 768px) {
+            font-size: 12px;
+            line-height: 1.166;
+            letter-spacing: 0.02em;
+            color: #757575;
+        }
     }
 }
 
@@ -49,16 +62,10 @@
     margin-left: 20px;
     margin-bottom: 48px;
 
-    .pseudo::after {
-        position: absolute;
-        content: "";
-        background-image: url("../images/line.svg");
-        width: 22px;
-        height: 0;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        fill: var(--title-text-color);
-        margin-left: 10px;
+    .pseudo {
         margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
 }
 
@@ -76,9 +83,6 @@
     width: 100vw;
     height: 100vh;
 
-    @media screen and (min-width: 768px) {
-        
-    }
 
     .menu-close {
         position: absolute;
@@ -87,10 +91,6 @@
 
         border: none;
         background-color: var(--primery-white-color);
-
-        @media screen and (min-width: 768px) {
-            display: none;
-        }
 
         .menu-button__color:hover,
         .menu-button__color:focus {
@@ -118,21 +118,7 @@
     justify-content: space-between;
     flex-direction: column;
     height: 100%;
-}
 
-.mobile-menu__link {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.175;
-    text-align: center;
-    letter-spacing: 0.02em;
-
-    color: var(--primery-text-color);
-
-    &:hover {
-        color: var(--accent-color);
-    }
 }
 
 .mobile-contacts__link {
@@ -166,7 +152,4 @@
 .menu-container.is-hidden {
     display: none;
 
-    @media screen and (min-width: 768px) {
-        display: block;
-    }
 }

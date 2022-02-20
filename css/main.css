@@ -1311,12 +1311,6 @@ img {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-open {
-    display: none;
-  }
-}
-
 .mobile-menu__item {
   margin-top: 28px;
   margin-left: 20px;
@@ -1324,6 +1318,17 @@ img {
 
 .mobile-menu .mobile-menu__link {
   margin-bottom: 36px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primery-text-color);
+}
+
+.mobile-menu .mobile-menu__link:hover {
+  color: var(--accent-color);
 }
 
 .mobile-contacts__list {
@@ -1331,17 +1336,19 @@ img {
   margin-bottom: 64px;
 }
 
-.mobile-contacts__item.tel {
-  margin-bottom: 36px;
+.mobile-contacts__item .mobile-contacts__link {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
 }
 
-.mobile-contacts__item.tel .mobile-contacts__link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.176;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
+@media screen and (min-width: 768px) {
+  .mobile-contacts__item .mobile-contacts__link {
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
 }
 
 .mobile-social__list {
@@ -1350,16 +1357,10 @@ img {
   margin-bottom: 48px;
 }
 
-.mobile-social__list .pseudo::after {
-  position: absolute;
-  content: "";
-  background-image: url("../images/line.svg");
-  width: 22px;
-  height: 0;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  fill: var(--title-text-color);
-  margin-left: 10px;
+.mobile-social__list .pseudo {
   margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile-menu__link,
@@ -1382,12 +1383,6 @@ img {
   top: 15px;
   border: none;
   background-color: var(--primery-white-color);
-}
-
-@media screen and (min-width: 768px) {
-  .menu-container .menu-close {
-    display: none;
-  }
 }
 
 .menu-container .menu-close .menu-button__color:hover,
@@ -1424,20 +1419,6 @@ img {
   height: 100%;
 }
 
-.mobile-menu__link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--primery-text-color);
-}
-
-.mobile-menu__link:hover {
-  color: var(--accent-color);
-}
-
 .mobile-contacts__link {
   font-style: normal;
   font-weight: 500;
@@ -1468,11 +1449,5 @@ img {
 
 .menu-container.is-hidden {
   display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-container.is-hidden {
-    display: block;
-  }
 }
 /*# sourceMappingURL=main.css.map */
